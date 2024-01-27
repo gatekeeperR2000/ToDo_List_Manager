@@ -22,5 +22,16 @@ void display_menu() {
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    bool done = false;
+    int choice;
+
+    while (!done) {
+        display_menu();
+
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        // Debug
+        cout << choice;
+    }
 }
