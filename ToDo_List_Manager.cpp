@@ -17,6 +17,7 @@ void display_menu() {
     cout << "2. Display your List\n";
     cout << "3. Delete a Task\n";
     cout << "4. Edit a Task\n";
+    cout << "\n";
 }
 
 
@@ -25,13 +26,39 @@ int main()
     bool done = false;
     int choice;
 
+    int task_number = 0;
+    int task_number_to_find;
+
+
     while (!done) {
         display_menu();
 
         cout << "Enter your choice: ";
         cin >> choice;
 
-        // Debug
-        cout << choice;
+        switch (choice)
+        {
+        case 0:
+            done = true;
+            break;
+        case 1:
+            cout << "Adding a Task: \n";
+            break;
+        case 2:
+            cout << "Your List is as follows: \n";
+            break;
+        case 3:
+            cout << "Deleting a Task: \n";
+            break;
+        case 4:
+            cout << "Enter the Task Number you wish to edit: ";
+            cin >> task_number_to_find;
+            break;
+        default:
+            cout << "That is not a valid choice of this menu, please try again.\n";
+            break;
+
+            cout << "\n";
+        }
     }
 }
