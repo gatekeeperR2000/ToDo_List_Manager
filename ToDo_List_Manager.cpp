@@ -12,7 +12,11 @@ using namespace std;
 // Display function to show all commands to navigate the menu of the program
 void display_menu() {
     cout << "\nManager menu:\n";
-    cout << "\n";
+    cout << "0. Quit the Program\n";
+    cout << "1. Add a Task\n";
+    cout << "2. Display your List\n";
+    cout << "3. Delete a Task\n";
+    cout << "4. Edit a Task\n";
 }
 
 
