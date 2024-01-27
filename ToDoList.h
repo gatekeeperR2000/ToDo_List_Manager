@@ -9,14 +9,24 @@
 #include <string>
 #include <iostream>
 #include <list>
+#include "Task.h"
+
+using namespace std;
 
 class ToDoList {
 private:
 	// Private Variables
+	int number_of_tasks;
+
+	list<Task> tasks;
 
 public:
 	// Public functions
+	ToDoList();
 
+	void get_list();
+
+	void add_task_to_list();
 
 };
 
