@@ -29,6 +29,8 @@ int main()
     int task_number = 0;
     int task_number_to_find;
 
+    ToDoList* your_list = new ToDoList();
+
 
     while (!done) {
         display_menu();
@@ -43,16 +45,23 @@ int main()
             break;
         case 1:
             cout << "Adding a Task: \n";
+            your_list->add_task_to_list(task_number);
             break;
         case 2:
             cout << "Your List is as follows: \n";
+            your_list->get_list();
             break;
         case 3:
-            cout << "Deleting a Task: \n";
+            cout << "Enter the Task Number you wish to delete: ";
+            cin >> task_number_to_find;
+            cout << "Attmepting to delete a Task: \n";
+            your_list->delete_task_from_list(task_number_to_find);
             break;
         case 4:
             cout << "Enter the Task Number you wish to edit: ";
             cin >> task_number_to_find;
+            cout << "Attempting to edit the Task: \n";
+            your_list->edit_task(task_number_to_find);
             break;
         default:
             cout << "That is not a valid choice of this menu, please try again.\n";
@@ -61,4 +70,5 @@ int main()
             cout << "\n";
         }
     }
+    delete your_list;
 }

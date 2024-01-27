@@ -16,6 +16,12 @@ void ToDoList::get_list() {
 		})
 }
 
-void ToDoList::add_task_to_list(Task new_task) {
+void ToDoList::add_task_to_list(int& task_number) {
+	Task new_task;
+
 	tasks.push_back(new_task);
+}
+
+void ToDoList::delete_task_from_list() {
+
 }

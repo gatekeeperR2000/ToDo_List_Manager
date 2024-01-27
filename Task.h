@@ -8,9 +8,11 @@
 class Task {
 private:
 	// Private variables
+	int task_number;
 
 public:
 	// Public functions
+	void Task();
 
 };
 

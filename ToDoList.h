@@ -26,7 +26,11 @@ public:
 
 	void get_list();
 
-	void add_task_to_list();
+	void add_task_to_list(int& task_number);
+
+	void delete_task_from_list(int task_number_to_find);
+
+	void edit_task(int task_number_to_find);
 
 };
 
