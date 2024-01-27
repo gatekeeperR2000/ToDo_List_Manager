@@ -16,7 +16,7 @@ void display_menu() {
     cout << "1. Add a Task\n";
     cout << "2. Display your List\n";
     cout << "3. Delete a Task\n";
-    cout << "4. Edit a Task\n";
+//    cout << "4. Edit a Task\n";
     cout << "\n";
 }
 
