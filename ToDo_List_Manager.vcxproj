@@ -127,10 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Task.cpp" />
+    <ClCompile Include="ToDoList.cpp" />
     <ClCompile Include="ToDo_List_Manager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Task.h" />
     <ClInclude Include="ToDoList.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

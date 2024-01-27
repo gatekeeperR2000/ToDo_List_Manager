@@ -46,6 +46,8 @@ int main()
         case 1:
             cout << "Adding a Task: \n";
             your_list->add_task_to_list(task_number);
+            task_number++;
+
             break;
         case 2:
             cout << "Your List is as follows: \n";
