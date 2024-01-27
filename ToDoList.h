@@ -30,7 +30,7 @@ public:
 
 	void delete_task_from_list(int task_number_to_find);
 
-	void edit_task(int task_number_to_find);
+	//void edit_task(int task_number_to_find);
 
 };
 

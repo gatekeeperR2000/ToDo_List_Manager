@@ -28,9 +28,12 @@ void ToDoList::add_task_to_list(int task_number) {
 }
 
 void ToDoList::delete_task_from_list(int task_number_to_find) {
-	return;
+	auto end = remove_if(tasks.begin(), tasks.end(), [task_number_to_find](auto& task) {
+		return task_number_to_find == task.get_task_number();
+		});
+	tasks.erase(end, tasks.end());
 }
 
-void ToDoList::edit_task(int task_number_to_find) {
-	return;
-}
+//void ToDoList::edit_task(int task_number_to_find) {
+//	return;
+//}

@@ -59,12 +59,12 @@ int main()
             cout << "Attmepting to delete a Task: \n";
             your_list->delete_task_from_list(task_number_to_find);
             break;
-        case 4:
-            cout << "Enter the Task Number you wish to edit: ";
-            cin >> task_number_to_find;
-            cout << "Attempting to edit the Task: \n";
-            your_list->edit_task(task_number_to_find);
-            break;
+        //case 4:
+        //    cout << "Enter the Task Number you wish to edit: ";
+        //    cin >> task_number_to_find;
+        //    cout << "Attempting to edit the Task: \n";
+        //    your_list->edit_task(task_number_to_find);
+        //    break;
         default:
             cout << "That is not a valid choice of this menu, please try again.\n";
             break;
